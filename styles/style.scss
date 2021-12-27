@@ -7,3 +7,33 @@ $line-color: hsl(215, 32%, 27%);
 $white: hsl(0, 0%, 100%);
 $main-font-size: 18px;
 // === / variables ===
+
+// === common styles ===
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: $main-font-size;
+    background: $main-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    max-width: 320px;
+    padding: 20px;
+    background: $card-bg;
+    border-radius: 20px;
+}
+// === / common styles ===
