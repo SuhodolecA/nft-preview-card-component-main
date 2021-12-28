@@ -36,6 +36,12 @@ body {
     background: $card-bg;
     border-radius: 20px;
 }
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
 // === / common styles ===
 
 // === card-header ===
@@ -43,7 +49,6 @@ body {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 20px;
 
     &__screen {
         position: absolute;
@@ -53,6 +58,7 @@ body {
         align-items: center;
         justify-content: center;
         background: rgba($cyan, 0.5);
+        display: none;
     }
 
     &__img {
@@ -63,4 +69,55 @@ body {
 // === / card-header ===
 
 // === card-main ===
+.card-main {
+    margin-top: 15px;
+
+    &__title {
+        line-height: 1;
+
+        &-link {
+            color: $white;
+            font-weight: 600;
+            font-size: 20px;
+            transition: color .2s ease-in-out;
+
+            &:hover {
+                color: cyan;
+            }
+        }
+    }
+
+    &__text {
+        margin-top: 10px;
+        color: $soft-blue;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    &__statistics {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        border-bottom: 1px solid $line-color;
+
+        &-item {
+            color: $soft-blue;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+
+            &-icon {
+                margin-right: 5px;
+            }
+            
+            &.ethereum {
+                font-weight: 600;
+                color: $cyan;
+            }
+        }
+    }
+}
 // === / card-main ===

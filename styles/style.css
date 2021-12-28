@@ -34,11 +34,15 @@ body {
   border-radius: 20px;
 }
 
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
 .card-header {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
 .card-header__screen {
@@ -55,10 +59,74 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background: rgba(0, 255, 247, 0.5);
+  display: none;
 }
 
 .card-header__img {
   width: 100%;
   vertical-align: middle;
+}
+
+.card-main {
+  margin-top: 15px;
+}
+
+.card-main__title {
+  line-height: 1;
+}
+
+.card-main__title-link {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+
+.card-main__title-link:hover {
+  color: cyan;
+}
+
+.card-main__text {
+  margin-top: 10px;
+  color: #8bacda;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.card-main__statistics {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #2f415b;
+}
+
+.card-main__statistics-item {
+  color: #8bacda;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-main__statistics-item-icon {
+  margin-right: 5px;
+}
+
+.card-main__statistics-item.ethereum {
+  font-weight: 600;
+  color: #00fff7;
 }
 /*# sourceMappingURL=style.css.map */
