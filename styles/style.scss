@@ -37,3 +37,30 @@ body {
     border-radius: 20px;
 }
 // === / common styles ===
+
+// === card-header ===
+.card-header {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    &__screen {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba($cyan, 0.5);
+    }
+
+    &__img {
+        width: 100%;
+        vertical-align: middle;
+    }
+}
+// === / card-header ===
+
+// === card-main ===
+// === / card-main ===
