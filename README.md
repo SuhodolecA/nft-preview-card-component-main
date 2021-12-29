@@ -1,6 +1,6 @@
 # Frontend Mentor - NFT preview card component
 
-![Link to solution](https://nft-preview-card-component-main-eight-theta.vercel.app/)
+[Link to solution](https://nft-preview-card-component-main-eight-theta.vercel.app/)
 
 ![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)
 
