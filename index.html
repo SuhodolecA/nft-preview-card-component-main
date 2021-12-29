@@ -19,6 +19,8 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      position: absolute;
+      bottom: 0;
     }
 
     .attribution a {
@@ -31,15 +33,14 @@
 
   <div class="card">
     <header class="card-header">
-      <div class="card-header__screen">
+      <a href="#" aria-label="link to the article" class="card-header__screen">
         <img src="images/icon-view.svg" alt="icon">
-      </div>
-      <a href="">
-      <img src="images/image-equilibrium.jpg" alt="header-image" class="card-header__img"></a>
+      </a>
+        <img src="images/image-equilibrium.jpg" alt="header-image" class="card-header__img">
     </header>
     <main class="card-main">
       <h1 class="card-main__title">
-        <a href="#" class="card-main__title-link">Equilibrium #3429</a>
+        <a href="#" aria-label="link to the article" class="card-main__title-link">Equilibrium #3429</a>
       </h1>
       <p class="card-main__text">Our Equilibrium collection promotes balance and calm.</p>
       <div class="card-main__statistics">
@@ -58,15 +59,15 @@
       <img src="images/image-avatar.png" alt="avatar" class="card-footer-avatar">
       <p class="card-footer-author">
         Creation of
-        <a href="" class="card-footer-author-link">Jules Wyvern</a>
+        <a href="#" aria-label="link to the author" class="card-footer-author-link" target="_blank">Jules Wyvern</a>
       </p>
     </footer>
   </div>
 
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  </div>
 </body>
 
 </html>
